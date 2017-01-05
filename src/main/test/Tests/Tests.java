@@ -42,4 +42,9 @@ public class Tests {
 	public void EdwardSiteTest(){
 		login.newedwardstest();
 	}
+	
+	@Test
+	public void newtest(){
+		//Do something
+	}
 }
