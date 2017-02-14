@@ -45,7 +45,7 @@ public class Drivers {
 				instance.get(newurl);
 				instance.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			} else if (Browser.equals("chrome")) {
-				System.setProperty("webdriver.chrome.driver", "C:/Users/Cisco/Documents/Eclipse/chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "/Users/joshmolina/Documents/Home_Automation/Drivers/chromedriver");
 				System.setProperty("webdriver.chrome.silentOutput", "true");
 				instance = new ChromeDriver();
 				instance.manage().window().maximize();
