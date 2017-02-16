@@ -412,4 +412,19 @@ public class webappCommand extends WebAppCoreMethods {
 		inputtestSite();
 	}
 
+	public void newapttest1() {
+		apartmentsite();
+		
+	}
+
+	public void menusection() {
+		menusectiontest();
+		
+	}
+
+	public void addalisting() {
+		addlistingtest();
+		
+	}
+
 }

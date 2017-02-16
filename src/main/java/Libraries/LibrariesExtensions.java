@@ -56,8 +56,9 @@ public class LibrariesExtensions extends WebDriverLibrary {
 			int j = 0;
 			for(WebElement e : dataelements){
 				elements[j] = e.getText();
-				System.out.println(e.getText());
+				
 				if(elements[j].contains(elementtoclick)){
+					System.out.println(e.getText());
 					e.click();
 					break;
 				}

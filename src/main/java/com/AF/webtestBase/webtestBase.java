@@ -205,6 +205,21 @@ public class webtestBase {
 		WebAppBridge.loginwith(null).withpassword(null).inputtest1();
 	}
 
+	public void firstapartmenttest() {
+		log.info("Firt Apt Test");
+		WebAppBridge.loginwith(null).withpassword(null).newapttest1();
+		
+	}
+
+	public void secondapartmenttest() {
+		log.info("Hamburger menu test");
+		WebAppBridge.loginwith(null).withpassword(null).menusection();
+	}
+	
+	public void addalistingtest(){
+		log.info("Add a listing test");
+		WebAppBridge.loginwith(null).withpassword(null).addalisting();
+	}
 	
 
 	

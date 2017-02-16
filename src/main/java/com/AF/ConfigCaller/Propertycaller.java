@@ -1206,6 +1206,10 @@ public class Propertycaller {
 		// TODO Auto-generated method stub
 		return prop.getProperty("qatestSite");
 	}
+	
+	public String getapartmentsurl(){
+		return prop.getProperty("apartmentsurl");
+	}
 
 	public String gettestsiteinputfield() {
 		// TODO Auto-generated method stub
@@ -1220,6 +1224,105 @@ public class Propertycaller {
 	public String getthirdradiobutton() {
 		// TODO Auto-generated method stub
 		return prop.getProperty("thirdradiobutton");
+	}
+
+	public String getsearchfieldid() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("searchfieldid");
+	}
+
+	public String getsearchrange() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("searchrange");
+	}
+
+	public String getminrange() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("minrange");
+	}
+	
+	public String getmaxrange(){
+		return prop.getProperty("maxrange");
+	}
+
+	public String gobutton() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("gobutton");
+	}
+
+	public String getaptcontainer() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("aptlistings");
+	}
+
+	public String getindividuallisting() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("apttitle");
+	}
+
+	public String hamburgermenu() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("hamburgermenu");
+	}
+
+	public String getaptsaddressfield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("aptaddressinput");
+	}
+
+	public String getcondoradio() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("condoradiobutton");
+	}
+
+	public String getsquareftfield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("squareftfield");
+	}
+
+	public String getaptrentfield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("aptrentfield");
+	}
+
+	public String getaptdepositefield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("aptdepositefield");
+	}
+
+	public String getcalendarfield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("calendarfield");
+	}
+
+	public String getleaselengthfield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("leaselengthfield");
+	}
+
+	public String getaptfirstnamefield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("aptfirstname");
+	}
+
+	public String getaptlastnamefield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("aptlastname");
+	}
+
+	public String getaptemailfield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("aptemailfield");
+	}
+
+	public String getaptphonefield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("aptphonefield");
+	}
+
+	public String getdogfield() {
+		// TODO Auto-generated method stub
+		return prop.getProperty("dogfield");
 	}
 
 }
