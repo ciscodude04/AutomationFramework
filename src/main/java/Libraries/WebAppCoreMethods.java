@@ -135,10 +135,10 @@ public class WebAppCoreMethods extends WebappTestCases {
 			Thread.sleep(700);
 			if (iselementPresent(By.cssSelector(offer))) {
 				clickbycss(offer);
-			}
-			else clickbycss(data.getloanOption());
-			//String offertype = getinnertextCss(offer);
-			//LibrariesExtensions.writetoRecorder("OFFER TYPE: " + offertype);
+			} else
+				clickbycss(data.getloanOption());
+			// String offertype = getinnertextCss(offer);
+			// LibrariesExtensions.writetoRecorder("OFFER TYPE: " + offertype);
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (InterruptedException e) {
@@ -162,7 +162,8 @@ public class WebAppCoreMethods extends WebappTestCases {
 				LibrariesExtensions.datacollectionLower(data.getdealershipcontainer(), data.getdealershipoption(),
 						dealership);
 				Thread.sleep(500);
-			} else clickbycss(data.getdealershipoption());
+			} else
+				clickbycss(data.getdealershipoption());
 			String dealershipname = getinnertextCss(data.getdealershipoption());
 			LibrariesExtensions.writetoRecorder(dealershipname);
 			clickbycss(data.getnextbuttoncss());
@@ -620,8 +621,8 @@ public class WebAppCoreMethods extends WebappTestCases {
 		}
 
 	}
-	
-	public static void edwardshomepagetest(){
+
+	public static void edwardshomepagetest() {
 		try {
 			data = new Propertycaller();
 			clickbyxpath(data.getmainpagemenu());
@@ -629,15 +630,15 @@ public class WebAppCoreMethods extends WebappTestCases {
 			Thread.sleep(4000);
 			String jobtitle = "009470";
 			inputbycss(data.getkeywordinput(), jobtitle);
-			//clickbylinkText("Quality");
+			// clickbylinkText("Quality");
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 	}
-	
-	public void inputtestSite(){
+
+	public void inputtestSite() {
 		try {
 			data = new Propertycaller();
 			inputbycss(data.gettestsiteinputfield(), "Testing 123, DID YOU READ ME ON TIME");
@@ -647,7 +648,73 @@ public class WebAppCoreMethods extends WebappTestCases {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
+	}
+
+	public void apartmentsite() {
+		try {
+			data = new Propertycaller();
+			inputbycss(data.getsearchfieldid(), "Houston, TX");
+			clickbycss(data.getsearchrange());
+			inputbycss(data.getminrange(), "900");
+			inputbycss(data.getmaxrange(), "2000");
+			clickbyxpath(data.gobutton());
+			LibrariesExtensions.datacollectionLower(data.getaptcontainer(), data.getindividuallisting(), "Quail Creek");
+
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+	}
+
+	public void menusectiontest() {
+		try {
+			data = new Propertycaller();
+			clickbycss(data.hamburgermenu());
+			Thread.sleep(1000);
+			clickbyxpath("//*[@id=\"menuNavigation\"]/li[6]/a");
+			// clickbylinkText("Homes for Rent");
+			Thread.sleep(1000);
+			clickbylinkText("Houston Houses for Rent");
+			Thread.sleep(1000);
+			LibrariesExtensions.datacollectionLower(data.getaptcontainer(), data.getindividuallisting(),
+					"1447 Sue Barnett Dr");
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
 	
+	public void addlistingtest(){
+		try{
+			data = new Propertycaller();
+			clickbyxpath("//*[@id=\"headerAddListing\"]/span");
+			inputbycss(data.getaptsaddressfield(), "19147 Lake Forest Drive, Lake Forest, CA");
+			clickbycss(data.getcondoradio());
+			inputbycss(data.getsquareftfield(), "400");
+			inputbycss(data.getaptrentfield(), "500");
+			inputbycss(data.getaptdepositefield(), "3000");
+			clickbycss(data.getcalendarfield());
+			inputbycss(data.getleaselengthfield(), "3");
+			
+			//User Info
+			inputbycss(data.getaptfirstnamefield(), "Demo");
+			inputbycss(data.getaptlastnamefield(), "Test");
+			inputbycss(data.getaptemailfield(), LibrariesExtensions.randomEmail());
+			inputbycss(data.getaptphonefield(), "4449994545");
+			clickbycss(data.getdogfield());
+			//Captcha
+			//clickbycss("div[class*='recaptcha-checkbox-checkmark']");
+			//clickbyxpath("//*[@id=\"recaptcha-anchor\"]/div[5]");
+			
+			
+			
+		} catch(IOException e){
+			e.printStackTrace();
+		}
 	}
 
 }
